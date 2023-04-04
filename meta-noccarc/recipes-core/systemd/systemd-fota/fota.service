@@ -1,0 +1,11 @@
+[Unit]
+Description= 730i FOTA Service
+Requires=weston@root.service
+
+[Service]
+Type=idle
+WorkingDirectory=/home/root/FOTA_IMX
+ExecStart=python3 /home/root/FOTA_IMX/fota_iomt.py
+
+[Install]
+WantedBy=multi-user.target

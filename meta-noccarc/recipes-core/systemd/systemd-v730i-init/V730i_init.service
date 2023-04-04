@@ -1,0 +1,8 @@
+[Unit]
+Description=V510 Initial config service
+
+[Service]
+ExecStart=/etc/scripts/V730i_init.sh
+
+[Install]
+WantedBy=multi-user.target

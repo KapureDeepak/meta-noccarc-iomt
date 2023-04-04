@@ -1,0 +1,2 @@
+#Remove all device except mass storage type
+KERNELS=="1-1.4:*", SUBSYSTEM=="usb", DRIVER!="usb-storage", ACTION!="remove", ACTION!="unbind", PROGRAM=="/bin/sh -c 'echo usb-udev-rule: %p > /dev/kmsg'", PROGRAM=="/bin/sh -c 'echo 1 > /sys/devices/platform/soc\@0/32c00000.bus/32e40000.usb/ci_hdrc.0/usb1/1-1/1-1.4/remove'"

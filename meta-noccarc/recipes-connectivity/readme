@@ -1,0 +1,3 @@
+This tarball is kept for futher improvements in the configuration of network manager.
+the current method employed to configure network manager is to expand and install the scripts at boot. this is working perfectly fine for now.
+The tarball contains scripts and patches that are applied in networkmanager_%.bbappend itself, changing the configuration during compile time. Delete the readme once this method is implemented.

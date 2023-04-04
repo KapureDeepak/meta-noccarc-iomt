@@ -1,0 +1,3 @@
+This is added in image as a probable support package for compiling networkmanager_%.bbappend.
+During compile, the network manager package defaults at libjansson.so and hence this was added. 
+Delete once this is implemented.

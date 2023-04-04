@@ -1,0 +1,9 @@
+[Unit]
+Description= Network config service V730i
+
+[Service]
+Type=idle
+ExecStart=/etc/scripts/network-config.sh
+
+[Install]
+WantedBy=multi-user.target
